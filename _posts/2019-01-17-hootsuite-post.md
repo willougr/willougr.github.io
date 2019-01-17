@@ -1,4 +1,8 @@
-**Setting up a Machine Learning Framework for Production**
+---
+layout: post
+title: Setting up a Machine Learning Framework for Production
+---
+_Note: This blog post was originally written while I was on a co-op term at Hootsuite in the fall of 2017 and published on the [Code@Hootsuite blog](code.hootsuite.com) as [Setting up a Machine Learning Framework for Production](http://code.hootsuite.com/setting-up-a-machine-learning-framework-for-production/). I've duplicated it here in order to bring everything under one roof._
 
 Here at Hootsuite we're always looking for better ways to utilize our
 time and new technology. That's why we're looking at building an
@@ -9,23 +13,20 @@ required.
 **The Problem**
 
 Currently, ML is often done on a very ad-hoc basis. That's because there
-is no standardized workflow---as of yet---to deal with many of the
+is no standardized workflow—as of yet—to deal with many of the
 unique difficulties associated with ML. At Hootsuite, we identified four
 key components that are needed:
 
-Data: All training and verification data needs to be validated and
+* Data: All training and verification data needs to be validated and
 versioned so if something goes wrong, we can effectively track down the
 issue if it's related to our data.
-
-Model Training: We don't want to be reinventing the wheel every time we
+* Model Training: We don't want to be reinventing the wheel every time we
 need to train a new model (even if the APIs for TensorFlow and
 scikit-learn do make that process easier).
-
-Model Validation: Processes need to be put in place to make sure that
+* Model Validation: Processes need to be put in place to make sure that
 when we update models in a production environment they actually perform
 as expected and bring measurable benefits.
-
-Infrastructure: Broadly, this is everything from being able to easily
+* Infrastructure: Broadly, this is everything from being able to easily
 switch out models in production to making sure that they can be accessed
 in a uniform format so we're not writing new code when we want to add ML
 to an existing product (i.e. it should be as easy as making an API call
@@ -39,10 +40,9 @@ technical debt that we want to minimize from the outset.
 
 **Technical Debt**
 
-![](media/image1.png){width="6.5in" height="2.1974726596675414in"}
-
-Photo source: [[Hidden Technical Debt in Machine Learning
-Systems]{.underline}](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf) by
+![]
+Photo source: [Hidden Technical Debt in Machine Learning
+Systems](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf) by
 D. Sculley et al.
 
 Given the complexity of ML systems, it's unsurprising that they can
