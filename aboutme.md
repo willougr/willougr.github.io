@@ -1,16 +1,11 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: The TL;DR
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+- I'm working on posting more of my thoughts on the internet
+- I've got 2 degrees from UBC in history, economics and computer science
+- I'm interested in the intersection of technology, society and human cognition
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+This site was built thanks to [Beautiful Jekyll](https://deanattali.com/beautiful-jekyll/), [markdown](http://www.markdowntutorial.com/) and [GitHub Pages](https://pages.github.com/). As with most things in tech, I'm in debt to those who came before me and open-sourced their work.
